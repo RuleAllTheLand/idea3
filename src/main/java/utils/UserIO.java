@@ -39,10 +39,7 @@ public class UserIO {
             } catch ( Exception e) {
                throw new BusinessException("io.read.error");
             }
-    }/*
-反对者v给
-
-    */
+    }
 
     //添加用户
     public void add(User user){
