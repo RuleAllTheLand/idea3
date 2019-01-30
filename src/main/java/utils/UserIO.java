@@ -24,6 +24,11 @@ public class UserIO {
 
     }
 
+    /**
+     *
+     * @return
+     * @throws BusinessException
+     */
     //读取用户列表
     public boolean readUsers() throws  BusinessException{
         try{
