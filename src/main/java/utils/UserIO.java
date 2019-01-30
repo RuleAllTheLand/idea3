@@ -46,4 +46,14 @@ public class UserIO {
         user.setId(users.size()+1);//自增的id
         users.add(user);
     }
+
+    //查询的方法
+    public User findByUsernameAndPassword(String username,String password){
+        for(User u:users){
+            if(u.getUsername().equals(username)&&u.getPassword().equals(password)){
+                return u;
+            }
+        }
+        return null;
+    }
 }
